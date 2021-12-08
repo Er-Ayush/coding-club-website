@@ -1,0 +1,91 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>XHTML FORM</title>
+    <link rel="stylesheet" type="text/css" href="forms.css" media="all" />
+
+</head>
+
+
+<script>
+//    use of javascript dialogue box
+function warn(){
+    var val=confirm("Do you really want to submit");
+    if (val==true) {
+        document.write("User want to continue");
+    }
+    else
+    document.write("User dont want to continue");
+}
+</script>
+
+
+<body>
+       <div class="header">&nbsp;Form Review</div>
+<br />
+    <form>
+        <div class="contact-us">
+
+            <div class="row">
+
+                <div class="contact-col">
+
+                    <span>
+                        First Name:<input type="text" name="name" />
+                        Last Name:<input type="text" name="name" />
+                    </span>
+
+                    <span>
+                        Email:<input type="text" name="email" />
+                        Mobile:<input type="text" name="phone" />
+                       
+                    </span>
+
+
+                    <span class="nav">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender" id="gender" />Male
+                        <input type="radio" name="gender" id="gender" />Female
+                    </span>
+                </div>
+
+                <div class="contact-col">
+
+                    <div>
+                        <label for="language">Language:</label>
+                        <select name="language" id="language">
+
+                            <option value="">Select</option>
+
+                            <option value="C/C++">C++</option>
+
+                            <option value="Java">Java</option>
+
+                            <option value="Python">Python</option>
+                        </select>
+                    </div>
+                    <br />
+                    
+                    <br />
+                    
+                    <div>
+                        <label for="Coding">Coding:</label>
+                        Competitive Coding:<input type="checkbox" name="Coding" id="Coding" />
+                        Web Development:<input type="checkbox" name="Coding" id="Coding" />
+                        Android developement:<input type="checkbox" name="Coding" id="Coding" />
+                    </div>
+
+                    <div>
+                        Review<textarea name="review" id="" cols="" rows="5" ></textarea>
+                    </div>                              
+                    <!-- <div oninput="input()"></div> -->
+                </div>
+            </div>
+            <button type="submit" class="hero-btn red-btn" onclick="warn();">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

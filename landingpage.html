@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>P_creations</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+
+ <script src="script.js"></script>
+
+
+    <body onload="checkCookie()">
+    <style>
+      * {
+        margin: 0;
+
+        padding: 0;
+      }
+
+      .background {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url(n.jpg);
+
+        background-size: cover;
+
+        height: 100vh;
+      }
+
+      .navbar {
+        height: 80px;
+
+        width: 100%;
+
+        /* position: fixed; */
+
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      .logo {
+        width: 140px;
+
+        height: auto;
+
+        padding: 20px 100px;
+      }
+
+      .navbar ul {
+        float: right;
+
+        margin-right: 20px;
+      }
+
+      .navbar ul li {
+        list-style: none;
+
+        margin: 0 8px;
+
+        display: inline-block;
+
+        line-height: 80px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+
+        color: white;
+
+        font-size: 19px;
+
+        padding: 8px 19px;
+
+        font-family: "Noto Sans", sans-serif;
+
+        transition: 0.4s;
+      }
+
+      .navbar ul li a.active,
+      .navbar ul li a:hover {
+        background: red;
+
+        border-radius: 2px;
+      }
+
+      .background .main {
+        position: absolute;
+
+        top: 51%;
+
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        font-family: sans-serif;
+      }
+
+      .main h1 {
+        font-family: "Hammersmith One", sans-serif;
+
+        color: rgb(123, 209, 10);
+
+        font-weight: bold;
+
+        font-size: 75px;
+
+        width: 900px;
+
+        text-align: center;
+      }
+
+      .main h2 {
+        font-family: "Hammersmith One", sans-serif;
+
+        color: white;
+
+        font-size: 40px;
+
+        font-weight: bold;
+
+        margin-top: 20px;
+
+        width: 700px;
+
+        margin-left: 65px;
+
+        text-align: center;
+      }
+
+      span {
+        color: red;
+        font-style: italic;
+        font-size: 70px;
+      }
+
+      .welcome {
+        margin-bottom: 20px;
+
+        word-spacing: 8px;
+      }
+
+      .buttons button {
+        margin-top: 35px;
+
+        margin-left: 8px;
+
+        height: 30px;
+
+        width: 30px;
+
+        font-size: 18px;
+
+        font-weight: bold;
+
+        color: black;
+
+        background: white;
+
+        font-family: "Hammersmith One", sans-serif;
+
+        border: 1px solid black;
+
+        outline: none;
+
+        cursor: pointer;
+
+        border-radius: 4px;
+
+        transition: 0.5s;
+      }
+
+      .buttons {
+        margin-left: 300px;
+      }
+
+      .buttons button:hover {
+        background: red;
+
+        color: white;
+      }
+    </style>
+
+    <div class="background">
+      <nav class="navbar">
+        <img src="BEING IIITIAN.png" class="logo" alt="logo" />
+
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+
+          <li><a href="#">About</a></li>
+
+          <li><a href="#">IIIT'N</a></li>
+
+          <li ><a href="FORMS//forms.xhtml">Join club</a></li>
+		  
+		  <li><a href="#">Upcoming Contests</a></li>
+
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="main">
+        <h2 class="welcome">WELCOME TO OUR<span> </span></h2>
+
+        <h1>IIIT NAGPUR <span>CODING CLUB</span></h1>
+
+        <div class="buttons">
+          <button><i class="fa fa-facebook" aria-hidden="true"></i></button>
+
+          <button><i class="fa fa-twitter" aria-hidden="true"></i></button>
+
+          <button><i class="fa fa-google-plus" aria-hidden="true"></i></button>
+
+          <button><i class="fa fa-instagram" aria-hidden="true"></i></button>
+
+          <!-- <button><i class="fa fa-pinterest-p" aria-hidden="true"></i></button> -->
+
+          <button><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </div>
+    <br />
+<p id="p2">
+	<a href="#" onclick=location.replace("Forms\\forms.xhtml") style="font-size: 20px;color: rgb(47, 61, 255);">click here</a> to register
+</p>
+	<section
+      style="
+        background-color: rgb(207, 16, 64);
+        height: 100px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+      "
+    >
+      <br />
+      <p
+        style="
+          text-align: center;
+          font-style: italic;
+          color: rgb(255, 255, 255);
+          background-color: rgb(207, 16, 64);
+        "
+      >
+        "" I WILL RULE THE WORLD || JUST LET ME COMPLETE ONE MORE LINE OF CODE
+        ""
+      </p>
+    </section>
+
+    <br />
+    <div
+      style="
+        font-size: 29px;
+        font-style: italic;
+        text-align: center;
+        color: rgb(0, 174, 255);
+      "
+    >
+      <b>ABOUT</b>
+    </div>
+    <p
+      style="font-family:  'Itim', cursive;font-size: 23px;padding-left: 150px;padding-right: 100px;color: rgb(7, 7, 7);text-align-last: center;text"
+    >
+      This coding group was created as a platform to help programmers make it
+      big in the world of algorithms, computer programming, and programming
+      contests. In this group we work hard to revive the geek in you by hosting
+      a programming contest at the start of the month and two smaller
+      programming challenges at the middle and end of the month. We also aim to
+      have training sessions and discussions related to algorithms, binary
+      search, technicalities like array size and the likes. Apart from providing
+      a platform for programming competitions, this group also has various forum
+      discussions to help those who are new to the world of computer
+      programming.<br /><br />
+
+      <span style="font-size: 40px; color: #884354"
+        ><b>WHAT IS CODEFORCES ?</b></span
+      ><br /><br />
+
+      Codeforces is a project joining people interested in and taking part in
+      programming contests. On one hand, Codeforces is a social network
+      dedicated to programming and programming contests. On the other hand, it
+      is a platform where contests are held regularly, the participant's skills
+      are reflected by their rating and the former contests can be used to
+      prepare. Codeforces constantly develops and we plan to improve the
+      platform to give the participants the opportunity to organize their own
+      contests, filling the project with learning content, developing Codeforces
+      as a training and learning platform.<br />
+
+      <a style="text-align: left; font-size: medium" href="#"
+        >Click here to enter codeforces</a
+      ><br /><br />
+
+      <span style="font-size: 40px; color: rgb(150, 148, 38)"
+        ><b>WHAT IS CODECHEF ?</b></span
+      ><br />
+
+      CodeChef was created as a platform to help programmers make it big in the
+      world of algorithms, computer programming, and programming contests. At
+      CodeChef we work hard to revive the geek in you by hosting a programming
+      contest at the start of the month and two smaller programming challenges
+      at the middle and end of the month. We also aim to have training sessions
+      and discussions related to algorithms, binary search, technicalities like
+      array size and the likes. Apart from providing a platform for programming
+      competitions, CodeChef also has various algorithm tutorials and forum
+      discussions to help those who are new to the world of computer
+      programming.<br />
+
+      <a style="text-align: left; font-size: medium" href="#"
+        >Click here to enter codechef</a
+      ><br /><br />
+    </p>
+    <br /><br />
+    <p
+      style="
+        text-align: center;
+        background-color: rgb(21, 124, 138);
+        height: 40px;
+        font-size: 40px;
+        color: rgb(0, 255, 42);
+      "
+    >
+      <b> Founder</b>
+    </p>
+
+    <div style="background-color: rgb(255, 255, 255)">
+      <img
+        style="
+          padding-left: 470px;
+          padding-right: 80px;
+          width: 25%;
+          height: 300px;
+        "
+        src="pp.jpg"
+      />
+      <h1 style="color: rgb(233, 55, 10); font-size: 30px; text-align: center">
+        <b>Ayush Chaurasia</b>
+      </h1>
+      <br />
+      <nav style="text-align: center">
+        <a
+          style="text-align: center; size: 20px; color: black"
+          target="_blank"
+          href="#"
+          >Linkedin</a
+        >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a
+          style="text-align: center; color: black"
+          target="_blank"
+          href="https://www.facebook.com/ayush.chaurasia.73307"
+          >Facebook</a
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a
+          style="text-align: center; color: rgb(15, 15, 15)"
+          target="_blank"
+          href="https://www.instagram.com/ayush_coolboy_02/"
+          >Instagram</a
+        >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br /><br /><br />
+      </nav>
+    </div>
+
+    <footer
+      style="
+        background-color: #333;
+        font-family: 'Times New Roman', Times, serif;
+        height: 50px;
+        color: white;
+      "
+    >
+      <section>
+        <br />
+        <a href="#" style="color: white; size: 50px; padding: 20px">FAQ</a>
+        <a href="#" style="color: white; size: 50px; padding: 20px"
+          >Google Sheet</a
+        >
+        <a href="#" style="color: white; size: 50px; padding: 20px"
+          >Contact Us</a
+        >
+        <a href="#" style="color: white; size: 50px; padding: 20px"
+          >Terms of Use</a
+        >
+        <a href="#" style="color: white; size: 50px; padding: 20px"
+          >&copy 2021</a
+        >
+      </section>
+    </footer>
+  </body>
+</html>
